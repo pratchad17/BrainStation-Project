@@ -1,28 +1,141 @@
-/* fonts */
+   /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 /* common styles */
 body{
     font-family: 'Popins', sans-serif;
 }
 
-header{
-    background-color: rgb(247, 240, 231);
-    display: flex;
-    justify-content: space-around;
-}
 .top-side a{
     text-decoration: none;
     color: black;
 
-
 }
 
+
+
+/* -------------------------------navigation part Stylesheet--------------------------------------------------- */
+
+.navigation{
+    border-right: 1px solid gainsboro;
+}
+
+.navigation .logo-img{
+    width: 35px;
+    margin-bottom: 50px;
+}
+
+.navigation h6{
+    color: #8585a0;
+    margin-bottom: 45px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.side-navigation{
+    list-style: none;
+    padding-left: 0;
+}
+
+.side-navigation-item{
+   padding: 10px 15px;
+   margin-top: 10px;
+   border-radius: 10px;
+   margin-right: 20px;
+}
+
+.side-navigation-item:hover{
+    background-color: rgb(255, 170, 170); 
+    cursor: pointer;
+}
+.side-navigation>li:hover>ul{
+    display: block;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 227, 249);
+    padding: 20px 25px;
+}
+
+.dropdown li{
+    padding: 3px;
+    margin-right: 15px;
+    list-style: none;
+}
+
+.side-navigation-item-active{
+    background-color: #6149cd;        
+}
+
+.side-navigation-item a{
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(90, 90, 90);
+}
+
+.side-navigation-item a i{
+    font-size: 12px;
+    width: 15px;
+    margin-right: 8px;
+}
+
+.side-navigation-item-active a{
+    color: white;
+}
+
+
+
 /* -----------------------Event part Stylesheet---------------------------- */
+.events{
+    padding-left: 40px!important;
+}
+
+.events-header{
+    display: flex;
+}
+
+.events .search{
+    background-color: rgb(233, 233, 233);
+    padding: 10px 25px;   
+    color: #535353;
+    border-radius: 10px; 
+}
+
+.events .search input{
+    border: none;
+    background-color: transparent;
+    margin-left: 12px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+
+.event-links{
+    display: flex;
+    border: 1px solid #d4d4d4;
+    border-radius: 15px;
+    padding: 5px;
+    
+}
+
+.event-links a{
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #666666;
+    margin-right: 18px;
+    padding: 10px 15px;
+}
+
+.event-links-active{
+    background-color: #ececec;
+    border-radius: 10px;
+}
+
 .event-side{
     display: flex;
     justify-content: space-between;
 }
-
 
 .event-side a{
     color:rgba(0, 0, 0, 0.616);
@@ -33,16 +146,12 @@ header{
     
 }
 
-
-
-.demo-bill{
-    /* display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 25px; */
-}
 .blog{
     display: flex;
     margin-bottom: 25px;
+    border: 1px solid #d4d4d4;
+    padding: 15px;
+    border-radius: 15px;
 }
 .blog img{
     width:177px;
@@ -68,63 +177,31 @@ header{
     font-weight: 400;
     margin-top: 10px;
 }
-/* -------------------------------navigation part Stylesheet--------------------------------------------------- */
-.side-navigation{
-    list-style: none;
-    padding-left: 0;
-}
 
-.side-navigation-item{
-   padding: 10px 15px;
-   margin-top: 10px;
-   border-radius: 10px;
-}
 
-.side-navigation-item:hover{
-    background-color: rgb(255, 170, 170); 
-    cursor: pointer;
-}
-.side-navigation>li:hover>ul{
-    display: block;
-}
-.dropdown{
-    display: none;
-    position: absolute;
-    background-color: rgb(255, 227, 249);
-    padding: 20px 25px;
-}
 
-.dropdown li{
-    padding: 3px;
-    margin-right: 15px;
-    list-style: none;
-}
 
-.side-navigation-item-active{
-    background-color: #6c55d0;        
-}
-
-.side-navigation-item a{
-    text-decoration: none;
-    color: rgb(90, 90, 90);
-}
-
-.side-navigation-item-active a{
-    color: white;
-}
 
 
 .last-side{
+    
+        
+}
+
+.last-side .image{
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
+   
+    
     
 }
 
-.last-side img{
-    transition: 0.7s all ease;
+.last-side .image img{
+    transition: 0.7s all ease;    
 }
 
-.last-side:hover img{
+.last-side .image:hover img{
     transform: scale(1.5);
 }

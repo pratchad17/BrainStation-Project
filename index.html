@@ -17,7 +17,7 @@
 </head>
 
 <body class="bg-light">
-    <header>
+    <!-- <header>
         <nav class="navbar navbar-light bg-light container-fluid">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -27,14 +27,12 @@
                     <input class="form-control me-2" type="search" placeholder="Search Events" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
                 </form>
-                <span class="top-side me-5">
-                    <!-- <a href=""> <i class="fas fa-arrow-alt-circle-down"></i>Filter</a> -->
-                    <!-- Button trigger modal -->
+                <span class="top-side me-5">                    
                     <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <i class="fas fa-arrow-alt-circle-down"></i>Filter
                     </button>
 
-                    <!-- Modal -->
+                    
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
@@ -62,16 +60,17 @@
                     Safkat Hasin Alavi <i class="far fa-laugh-beam "></i>
                 </a>
             </div>
-
-
         </nav>
-    </header>
+    </header> -->
+
+
     <main>
         <section class="container bg-light">
             <div class="row">
-                <div class="col-md-3 col-12 p-5">
+                <div class="col-md-2 col-12 p-4 navigation">
+                    <img class="img-fluid logo-img" src="images/logo1.png" alt="">
                     <div>
-                        <h4>Navigation</h4>
+                        <h6 class="">Navigation</h6>
                         <div>
                             <ul class="side-navigation">
                                 <li class="side-navigation-item side-navigation-item-active"><a href=""><i
@@ -91,16 +90,26 @@
 
                     </div>
                 </div>
-                <div class="col-md-6 col-12">
-                    <div class="row">
-                        <h2>Events</h2>
+                <div class="col-md-7 col-12 p-4 events">
+                    <div class="events-header mb-4">
+                        <div class="search me-4">
+                            <i class="fas fa-search"></i>
+                            <input placeholder="Search events" class="search-input" type="text">
+                        </div>
+                        <div class="search">
+                            <i class="fas fa-filter"></i>
+                            <span class="ms-2">Filter</span>
+                        </div>
                     </div>
-                    <div>
-                        <span class="event-side">
-                            <a href="">Upcoming Event</a>
-                            <a href="">All Events</a>
-                            <a href="">Post Events</a>
-                            <a href="">Custom Device Manager</a>
+
+                    <div class="row mb-2">
+                        <h3>Events</h3>
+                    </div>
+                    <div class="event-links mb-5">
+                        <a class="event-links-active" href="">Upcoming Event</a>
+                        <a href="">All Events</a>
+                        <a href="">Post Events</a>
+                        <a href="">Custom Device Manager</a>
                     </div>
                     <div class="demo-bill">
                         <article class="blog">
@@ -163,14 +172,16 @@
                                         <a href="" class="btn blog-color">3:00 PM</a>
                                     </div>
                                 </div>
-
                             </div>
-
                         </article>
                     </div>
                 </div>
                 <div class="col-md-3 col-12 last-side">
-                    <div>
+                    <div class="pt-2">
+                        <img src="images/p1.jpeg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                        Safkat Hasin Alavi <i class="far fa-laugh-beam "></i>
+                    </div>
+                    <div class="image">
                         <img class="w-50 img-fluid" src="images/balloon_1.png.crdownload" alt="">
                     </div>
                 </div>
