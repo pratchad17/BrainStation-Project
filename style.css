@@ -55,6 +55,19 @@ header{
 .blog-title{
     font-size: 20px;
 }
+.blog-color{
+    background-color: #ffefd4;
+    color: #fddca4;
+    font-size: small;
+    font-weight: 500;
+
+}
+.tag-color{
+    color: #8585a0;
+    font-size: small;
+    font-weight: 400;
+    margin-top: 10px;
+}
 /* -------------------------------navigation part Stylesheet--------------------------------------------------- */
 .side-navigation{
     list-style: none;
@@ -88,7 +101,7 @@ header{
 }
 
 .side-navigation-item-active{
-    background-color: brown;        
+    background-color: #6c55d0;        
 }
 
 .side-navigation-item a{
